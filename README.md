@@ -42,7 +42,8 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
    - Move the src folder from the cloned repository.
 9. **Build and Upload the project:**
      - In the workspace, run >Tasks: Run Build Task and select PlatformIO: Build filename.
-     - Then run >PlatformIO: Upload followed by >PlatformIO: Serial Monitor.
+     - Run >PlatformIO: Upload
+     - Run >PlatformIO: Serial Monitor
 
 ## Usage
 ### Receive
