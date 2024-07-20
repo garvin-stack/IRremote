@@ -1,4 +1,4 @@
-# ESP32 IR Remote Control Web Server
+u# ESP32 IR Remote Control Web Server
 This project sets up an ESP32 microcontroller as a web server that allows you to control an IR device (e.g., a TV) through a web interface. The ESP32 creates a Wi-Fi access point and provides a web page with buttons for toggling power, increasing/decreasing volume, and muting the device.
 
 ## Features
@@ -63,7 +63,7 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - setup(): Initializes the serial communication, IR receiver, IR sender, GPIO pins, Wi-Fi access point, and web server routes.
 - loop(): Handles incoming web server requests and decodes IR signals.
 - handler(): Serves the main web page.
-- togglePower(), volUp(), volDown(), mute(): Send corresponding IR commands.
+- togglePower()/volUp()/volDown()/mute(): Send corresponding IR commands.
 - handle_NotFound(): Handles undefined routes.
 - decoder(): Decodes received IR signals and prints them to the serial monitor.
 ## HTML Interface
