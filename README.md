@@ -17,18 +17,32 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - WebServer: For running the web server.
 
 ## Setup
-1. Find appropriate USB to UART driver(CP210x/CH340) that corresponds to your ESP32.
-2. Install visual studio code, go to extensions on visual studio code, download PlatformIO IDE and C/C++
-3. Open PlatformIO IDE(click on the icon on the side) and create a project
-4. Select Board: Expressif ESP32 Dev Module and Framework: Arduino
-5. Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
-6. In the platform.ini file type in
-```sh
-monitor_speed = 115200
-```
-7. Git clone this repository, delete the old src file and move src folder out of IRremote folder from repository
-8. Go into workspace and run >Tasks: Run Build Task and select PlatformIO: Build filename
-9. Now run >PlatformIO: Upload and follow with >PlatformIo: Serial Monitor
+
+1. Find appropriate USB to UART driver (CP210x/CH340) that corresponds to your ESP32.
+2. Install Visual Studio Code.
+3. Install PlatformIO IDE and C/C++ extensions:
+   - Go to extensions in Visual Studio Code.
+   - Download PlatformIO IDE and C/C++ extensions.
+4. Create a PlatformIO Project:
+   - Open PlatformIO IDE (click on the icon on the side) and create a project.
+   - Select Board: Expressif ESP32 Dev Module and Framework: Arduino.
+5. Add IRremote Library:
+   - Go to PlatformIO IDE Libraries and add the IRremote project by Armin Joachimsmeyer.
+6. Modify platform.ini:
+   - In the platform.ini file, add:
+   ```sh
+   monitor_speed = 115200
+   ```
+7. Clone this repository:
+   ```sh
+   https://github.com/garvin-stack/IRremote.git
+   ```
+8. Replace the old src folder:
+   - Delete the old src folder.
+   - Move the src folder from the cloned repository.
+9. Build and Upload the project:
+   - In the workspace, run >Tasks: Run Build Task and select PlatformIO: Build filename.
+   - Then run >PlatformIO: Upload followed by >PlatformIO: Serial Monitor.
 
 ## Usage
 ### Receive
@@ -57,7 +71,7 @@ monitor_speed = 115200
 - A fatal error occurred: Packet content transfer stopped (received 8 bytes).
   - Avoid gpio pins 12 and 13
 - Failed to connect to ESP32: Wrong boot mode detected (0x13)
-  - Press boot button on ESP32 when uploading
+  - Spam press boot button on ESP32 when uploading
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
