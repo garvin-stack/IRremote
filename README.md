@@ -10,7 +10,6 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - ESP32 development board
 - IR receiver connected to GPIO 26
 - IR transmitter connected to GPIO 33
-- Button (optional) connected to GPIO 14
 
 ## Libraries Required
 - IRremote: To send and receive IR signals.
@@ -24,7 +23,9 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - Open PlatformIO IDE(click on the icon on the side) and create a project
 - Select Board: Expressif ESP32 Dev Module and Framework: Arduino
 - Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
-- In the platform.ini file type in monitor_speed = 115200
+- In the platform.ini file type in
+```sh monitor_speed = 115200
+```
 - Git clone this repository
 - Delete the old src file and move src folder out of IRremote folder from repository
 - Go into workspace and run >Tasks: Run Build Task and select PlatformIO: Build filename
@@ -53,6 +54,8 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - decoder(): Decodes received IR signals and prints them to the serial monitor.
 ## HTML Interface
 - The getHTML() function generates the HTML code for the web page, which includes buttons for controlling the IR device.
+## Troubleshooting
+- A fatal error occurred: Packet content transfer stopped (received 8 bytes).
 
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
