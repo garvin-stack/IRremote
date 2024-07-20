@@ -18,29 +18,29 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 
 ## Setup
 
-1. **Find appropriate USB to UART driver (CP210x/CH340) that corresponds to your ESP32.**
-3. Install Visual Studio Code.
-4. Install PlatformIO IDE and C/C++ extensions:
+**1. Find appropriate USB to UART driver (CP210x/CH340) that corresponds to your ESP32.**
+**2. Install Visual Studio Code.**
+**3. Install PlatformIO IDE and C/C++ extensions:**
    - Go to extensions in Visual Studio Code.
    - Download PlatformIO IDE and C/C++ extensions.
-5. Create a PlatformIO Project:
+**4. Create a PlatformIO Project:**
    - Open PlatformIO IDE (click on the icon on the side) and create a project.
    - Select Board: Expressif ESP32 Dev Module and Framework: Arduino.
-6. Add IRremote Library:
+**5. Add IRremote Library:**
    - Go to PlatformIO IDE Libraries and add the IRremote project by Armin Joachimsmeyer.
-7. Modify platform.ini:
+**6. Modify platform.ini:**
    - In the platform.ini file, add:
    ```sh
    monitor_speed = 115200
    ```
-8. Clone this repository:
+**7. Clone this repository:**
    ```sh
    https://github.com/garvin-stack/IRremote.git
    ```
-9. Replace the old src folder:
+**8. Replace the old src folder:**
    - Delete the old src folder.
    - Move the src folder from the cloned repository.
-10. Build and Upload the project:
+**9. Build and Upload the project:**
    - In the workspace, run >Tasks: Run Build Task and select PlatformIO: Build filename.
    - Then run >PlatformIO: Upload followed by >PlatformIO: Serial Monitor.
 
