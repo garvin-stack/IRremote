@@ -57,7 +57,9 @@ monitor_speed = 115200
 - The getHTML() function generates the HTML code for the web page, which includes buttons for controlling the IR device.
 ## Troubleshooting
 - A fatal error occurred: Packet content transfer stopped (received 8 bytes).
-
+-- Avoid gpio pins 12 and 13
+- Failed to connect to ESP32: Wrong boot mode detected (0x13)
+-- Press boot button on ESP32 when uploading
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
