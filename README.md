@@ -17,16 +17,20 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - WiFi: For Wi-Fi connectivity.
 - WebServer: For running the web server.
 
-
-
-
-
-
-
+## Setup
+- Find appropriate USB to UART driver(CP210x/CH340) that corresponds to your ESP32.
+- Install visual studio code
+- Go to extensions on visual studio code, download PlatformIO IDE and C/C++
+- Open PlatformIO IDE(click on the icon on the side) and create a project
+- Select Board: Expressif ESP32 Dev Module and Framework: Arduino
+- Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
+- In the platform.ini file put in monitor_speed = 115200
+- 
 
 
 
 ## Usage
+- Run
 - Power up the ESP32: Once the code is uploaded, the ESP32 will create a Wi-Fi access point with the SSID ESP32_AP5555 and password 123456789.
 - Connect to the Wi-Fi network: On your computer or mobile device, connect to the Wi-Fi network created by the ESP32.
 - Open the web page: Open a web browser and navigate to http://192.168.1.1. You should see a web page with buttons to control the IR device.
