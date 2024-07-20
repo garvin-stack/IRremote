@@ -18,19 +18,17 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 
 ## Setup
 1. Find appropriate USB to UART driver(CP210x/CH340) that corresponds to your ESP32.
-  - Install visual studio code
-- Go to extensions on visual studio code, download PlatformIO IDE and C/C++
-- Open PlatformIO IDE(click on the icon on the side) and create a project
-- Select Board: Expressif ESP32 Dev Module and Framework: Arduino
-- Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
-- In the platform.ini file type in
+2. Install visual studio code, go to extensions on visual studio code, download PlatformIO IDE and C/C++
+3. Open PlatformIO IDE(click on the icon on the side) and create a project
+4. Select Board: Expressif ESP32 Dev Module and Framework: Arduino
+5. Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
+6. In the platform.ini file type in
 ```sh
 monitor_speed = 115200
 ```
-- Git clone this repository
-- Delete the old src file and move src folder out of IRremote folder from repository
-- Go into workspace and run >Tasks: Run Build Task and select PlatformIO: Build filename
-- Now run >PlatformIO: Upload and follow with >PlatformIo: Serial Monitor
+7. Git clone this repository, delete the old src file and move src folder out of IRremote folder from repository
+8. Go into workspace and run >Tasks: Run Build Task and select PlatformIO: Build filename
+9. Now run >PlatformIO: Upload and follow with >PlatformIo: Serial Monitor
 
 ## Usage
 ### Receive
@@ -57,9 +55,9 @@ monitor_speed = 115200
 - The getHTML() function generates the HTML code for the web page, which includes buttons for controlling the IR device.
 ## Troubleshooting
 - A fatal error occurred: Packet content transfer stopped (received 8 bytes).
--- Avoid gpio pins 12 and 13
+  - Avoid gpio pins 12 and 13
 - Failed to connect to ESP32: Wrong boot mode detected (0x13)
--- Press boot button on ESP32 when uploading
+  - Press boot button on ESP32 when uploading
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
