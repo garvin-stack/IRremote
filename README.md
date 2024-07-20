@@ -26,14 +26,15 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
 - In the platform.ini file put in monitor_speed = 115200
 - Git clone this repository
-- Delete the old src file
-- Go into workspace and run >Tasks: Run Build Task and select PlatformIO
-- 
-
-
+- Delete the old src file and move src folder out of IRremote folder from repository
+- Go into workspace and run >Tasks: Run Build Task and select PlatformIO: Build filename
+- Now run >PlatformIO: Upload and follow with >PlatformIo: Serial Monitor
 
 ## Usage
-- Run
+### Receive
+- Send signal from remote to receiver
+- Copy the code from serial monitor that corresponds to it and edit the code
+### Transmit
 - Power up the ESP32: Once the code is uploaded, the ESP32 will create a Wi-Fi access point with the SSID ESP32_AP5555 and password 123456789.
 - Connect to the Wi-Fi network: On your computer or mobile device, connect to the Wi-Fi network created by the ESP32.
 - Open the web page: Open a web browser and navigate to http://192.168.1.1. You should see a web page with buttons to control the IR device.
