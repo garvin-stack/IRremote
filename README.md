@@ -25,6 +25,9 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - Select Board: Expressif ESP32 Dev Module and Framework: Arduino
 - Go to PlatformIO IDE Libraries and add IRremote project by Armin Joachimsmeyer
 - In the platform.ini file put in monitor_speed = 115200
+- Git clone this repository
+- Delete the old src file
+- Go into workspace and run >Tasks: Run Build Task and select PlatformIO
 - 
 
 
