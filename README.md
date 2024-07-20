@@ -60,12 +60,12 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - Mute: Sends an IR command to mute the device.
 # Code Overview
 ## Functions
-- setup(): Initializes the serial communication, IR receiver, IR sender, GPIO pins, Wi-Fi access point, and web server routes.
-- loop(): Handles incoming web server requests and decodes IR signals.
-- handler(): Serves the main web page.
-- togglePower()/volUp()/volDown()/mute(): Send corresponding IR commands.
-- handle_NotFound(): Handles undefined routes.
-- decoder(): Decodes received IR signals and prints them to the serial monitor.
+- **setup():** Initializes the serial communication, IR receiver, IR sender, GPIO pins, Wi-Fi access point, and web server routes.
+- **loop():** Handles incoming web server requests and decodes IR signals.
+- **handler():** Serves the main web page.
+- **togglePower()/volUp()/volDown()/mute():** Send corresponding IR commands.
+- **handle_NotFound():** Handles undefined routes.
+- **decoder():** Decodes received IR signals and prints them to the serial monitor.
 ## HTML Interface
 - The getHTML() function generates the HTML code for the web page, which includes buttons for controlling the IR device.
 ## Troubleshooting
