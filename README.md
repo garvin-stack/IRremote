@@ -17,7 +17,7 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
 - WebServer: For running the web server.
 
 ## Setup
-- Find appropriate USB to UART driver(CP210x/CH340) that corresponds to your ESP32.
+1. Find appropriate USB to UART driver(CP210x/CH340) that corresponds to your ESP32.
 - Install visual studio code
 - Go to extensions on visual studio code, download PlatformIO IDE and C/C++
 - Open PlatformIO IDE(click on the icon on the side) and create a project
