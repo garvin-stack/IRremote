@@ -73,9 +73,6 @@ This project sets up an ESP32 microcontroller as a web server that allows you to
   - Avoid gpio pins 12 and 13
 - Failed to connect to ESP32: Wrong boot mode detected (0x13)
   - Spam press boot button on ESP32 when uploading
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 # Acknowledgments
 - IRremote Library
 - ESP32 WiFi Library
